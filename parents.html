@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto',sans-serif;
+    padding: 10px;
+    background: #61E5BF;
+}
+
+/* Header/Blog Title */
+.header {
+    padding-left: -40px;
+    text-align: center;
+
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 400px;
+    padding-right: -300px;
+}
+
+/* Right column */
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</head>
+<body>
+
+  <div class="header">
+    <div align="left"><img id="m" src="iamme.png" align="left"></div>
+    <div class="he">
+      <h1 right="500"><i>I am Me Project <i><h1>
+      <p><i> A collaborative effort to inform and protect identities. <i></p>
+    </div>
+
+<div class="topnav">
+  <a href="about.html">About</a>
+  <a href="parents.html">Parents</a>
+  <a href="iamme.html">I am Me</a>
+  <a href="ourstories.html">Our Stories</a>
+  <a href="newproject.html" style="float:right">Home</a>
+</div>
+<img src="https://i2.wp.com/soyhomosensual.com/wp-content/uploads/2017/06/e870c4db344ae9e5ac5d8d2c5488d5b1.jpg?fit=736%2C999&ssl=1" alt="Trulli" class="center"  width="500" height="300">
+<div id="parents">
+  <p> Having your kid come out to you can be emotional, sad, suprising, but it does not have to be difficult.</p>
+</div>
+
+<div id="ifwe">
+    <p> Here are some tips for when your child comes out to you: </p>
+    <p> 1: Don't push.
+      Your child will tell you what they want to tell you when they are ready.
+      It may take time, but your child will eventually tell you everything.
+      In the meantime, don't pry and be patient with them. </p>
+    <p> 2: Be supportive. Your child is oviously coming to you beause they love and trust you. Whatever they choose to tell you
+        should be met with understanding.Maybe tell them you love them and that nothing will change. </p>
+    <p> 3: Research. After your child comes out, educate yourself. Learn about the LGBTQ+ community. Also try to learn terms
+          that are offensive and not offensive. Althoug your words may be well-intentioned, using the wrong language can cause your child to close theselves off.</p>
+    <p> 4: Respect your child. After your child comes out, ask them a few relevant questions. Ask them what pronouns they would like to use, and use them.
+      Ask them if they wuld like to use a different name, and use it as well. Next, ask your child if you can tell people about their orientation/identity.
+      If the answer is no, respect their wishes. Outing is never okay. Finally, ask them if you can do anything to help them. They may want to dress in a new way, cut their hair,
+      or change their room. Respect their choices, and try to help them in any way possible. </p>
+    <p>5: Be patient. For LGBTQ+ children, he teenage years can be a difficult time. When your child comes out, they may not have everything figured out and that's okay.
+      Your child does not need to have everything figured out, and you shouldn't push them to. Be patient. Your child will figure it out in time. They need you
+      to be there for them.</p>
+      <p> 6: Don't belittle your child: "Kids are a lot smarter than most adults give them credit for. Your child may not know the actual terms for things but they do know how they feel.
+         Instead of trying to convince them to 'wait,' or telling them they’re 'too young,' let them figure it out for themselves. But still offer your support along the way.
+          Trying to discourage them simply due to their age can confuse them and even cause depression and/or anxiety." </p>
+        <p> 7: Let your child live: Don't tell your cild how open or private they should be about their orientation or gender identity. It's not your choice.
+          Your child's self-expression s their choice, and only theirs. Support their decision. How they choose to express themselves is part of who they are; don't shame or
+          ridicule your child for being who they are.
+          <p> Being a child in the LGBTQ+ community can be very difficult. Children are subject to bullying just because they are different.
+            This can lead to depression, anxiety and other mental health issues. If you notice your child struggling, please seek help.
+            There are some mental health resources specifically for LGBTQ+ children. We will link to a few of them below.</p>
+
+</div>
+
+<div class="row">
+  <div class="column">
+  <p>Non Emergent Help
+  <p> <a href="https://www.thetrevorproject.org/get-help-now/#sm.0001ytrjpg6b3e98x4a1vautj4j6g" target="_blank">The Trevor Project</a> </p>
+  <p> <a href="https://itgetsbetter.org/get-help/" target="_blank">It Gets Better Project</a>
+  <p> <a href="https://gaycenter.org/resources/" target="_blank">Gay Center</a>
+
+</div>
+</div>
+
+
+  <div class="column">
+
+      <p>Immediate Help
+      <p> <a href="https://directory.gaylesta.org/find-a-therapist/" target="_blank">Gaylesta</a> </p>
+      <p> <a href="https://suicidepreventionlifeline.org/" target="_blank">Suicide Hotline</a> </p>
+      <p> <a href="https://www.healthyplace.com/suicide/suicide-hotline-phone-numbers" target="_blank">International Suicide Hotlines</a> </p>
+  </div>
+</div>
+
+  </body>
+</html>
+
+<style>
+body {
+    background-color:  powderBlue ;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+p {
+  font-family: sans-serif;
+  color: black;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: bold;
+}
+
+#parents{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-family: sans-serif;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#m{
+  width: 20%;
+  padding-bottom:
+}
+
+.header {
+    text-align: center;
+    right: 50%;
+    float: left;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+
+}
+
+</style>

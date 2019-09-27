@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+{background-color: powderBlue;
+
+}
+body {
+  margin: 0;
+  background-color: powderBlue;
+}
+
+/* Style the header */
+.header {
+    background-image: url("http://www.rainbowsig.org/wp-content/uploads/2017/05/cropped-rainbow-header.jpg");
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 40px;
+    font-family: sans-serif;
+    background-color: powderBlue;
+    height: 540px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#m{
+
+  transform: rotate(90deg);
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><i>About<i></h1>
+  <p>We are 4 students at Girls Who Code in New York City. For our final project, we decided to make a website targeting kids struggling with
+      their sexuality and/or gender identity. We chose this topic because we all know people who are struggling and need resources.
+      This site is targeted at children and teens who are struggling with their identity and parents who want to suport their kids
+      but are unsure of how to.</p>
+</div>
+
+<div class="topnav">
+  <a href="about.html">About</a>
+  <a href="parents.html">Parents</a>
+  <a href="iamme.html">I am Me</a>
+  <a href="ourstories.html">Our Stories</a>
+  <a href="newproject.html" style="float:right">Home</a>
+</div>
+
+<div class="row">
+  <div class="column">
+
+    <img id="m" src="img_4921.jpg" alt="m" height=200 width=200>
+    <h2><i>Mikaela Cornelious<i></h2>
+    <p><i> Hey! My name is Mikaela Cornelious. I'm a rising senior at Oyster Bay High School, on Long Island. I'm interested in medicine, and
+        I would like to attend Johns Hopkins University next fall. I play the trumpet in my school's band, and I'm quite passionate about it.
+        I wanted to create this website as a resource for some of my friends in the LGBT+ community.<i> </p>
+  </div>
+  <div class="column">
+    <img src = "FullSizeRender.jpg" height="200" width="200">
+    <h2><i>Tenzin Ghongwatsang<i></h2>
+    <p>   What's up fam, Tenzin Ghongwatsang here. I'm a rising senior at Forest Hills High School, and I live in Queens.
+        I like to play volleyball and write poetry. I'm interested in computer science, and I'm unsure as to whee I would like to study.
+        All I know is that I am looking for a school with a very strong computer science program. </p>
+  </div>
+  <div class="column">
+    <img src = "img_3766.jpg" height="200" width="200">
+    <h2><i>Makayla Holder<i></h2>
+    <p><i>  Hey guys, welcome to the vlog! I'm Makayla Holder. I'm a rising senior at Curtis High School, on Staten Island. I'm passionate about film and media,
+          and I would like to combine that with mechanical engineering as a career. I have my sights set on Stanford University. When I'm
+          not thinking about college, you can find me at the movies, watching the latest film. I also have a YouTube channel. Subscribe: @makayla holder <i></p>
+  </div>
+<div class="column">
+  <img src = "img_4925.jpg" height="200" width="200">
+  <h2><i>Shaniah Headley<i></h2>
+  <p> <i>  Hey friends, my name is Shaniah Headley. I'm a rising senior at Springfield Gardens, and I live in Queens.
+      My hobbies include drawing and istening to music. My dream school is either Howard University or Stanford. I'm interested
+      in studying computer science and business. <i></p>
+
+
+</div>
+
+</body>
+</html>

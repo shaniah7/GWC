@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto',sans-serif;
+    padding: 10px;
+    background: #61E5BF;
+}
+
+/* Header/Blog Title */
+
+.header {
+    text-align: center;
+
+    float: left;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 400px;
+    padding-right: -300px;
+}
+
+/* Right column */
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+. {
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+body {
+  background-color: powderBlue;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+  font-family: sans-serif;
+  color: black;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-weight: bold;
+}
+a {
+  color: white;
+
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-famiily:
+}
+/* Change the color of links on hover */
+
+#noah{
+  text-align: center;
+  font-size: 19px;
+  color: navy;
+  font-family: sans-serif;
+}
+
+#lgbtq{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#mantra{
+  text-align: center;
+  font-size: 19px;
+  color: black;
+  font-family: sans-serif;
+}
+
+#m{
+  width: 20%;
+  padding-bottom:
+}
+#h{
+  text-align: center;
+  font-size: 50px;
+}
+
+#j{
+  text-align: center;
+  font-size: 15px;
+  margin-top: -30px;
+  margin-right: 125px;
+  float: right;
+}
+</style>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</head>
+<body>
+    <div class="header">
+      <div align="left"><img id="m" src="iamme.png" align="left"></div>
+      <div class="he">
+        <h1 id="h"><i>I am Me Project <i><h1>
+        <p id="j"><i> A collaborative effort to inform and protect identities. <i></p>
+      </div>
+    </div>
+
+<div class="topnav">
+  <a href="about.html">About</a>
+  <a href="">Parents</a>
+  <a href="iamme.html">I am Me</a>
+  <a href="ourstories.html">Our Stories</a>
+  <a href="newproject.html" style="float:right">Home</a>
+</div>
+
+  <div>
+  <img src="http://jpninfo.com/wp-content/uploads/2017/09/lgbt-rainbow-flag.jpg" alt="Trulli" class="center"  width="10000" height="300">
+  </div>
+
+
+<div id = "lgbtq">
+
+
+  <link rel="stylesheet"  href="circles.css">
+
+  <p> Feeling comfortable with yourself and who you are is sometimes harder than coming out to other people. Try to keep in mind
+    that many people around are struggling with this exact thought and that you are not alone.
+  </div>
+<div id = "noah">
+  <div class="row">
+    <div class="column">
+      <p> Realizing who you are and coming to terms with everything about yourself is extremely difficult at any age.
+        So when you evaluate yourself, being confused, afraid, scared, or even ashamed is completely normal. This period of your life, this time of not knowing, and curiosity is not be looked down upon but it is more of a exciting time to be cherished.
+        This is the time to fully explore yourself , and find out who you are.
+        Remember that you WILL figure everything out eventually, and the first step to acceptance comes from within. </p>
+    </div>
+    <div class="column">
+      <p> Once you are able to accept yourself, you will feel relief. You will feel a weight off of your shoulders and you can finally be comfortable with yourself.
+         The first step to finding yourself is coming out to yourself. This is a big step to take and when you are ready to do it, you will know.
+         There is no need to rush it, just make sure you are fully comfortable with yourself and then you will be ready.
+There is no one way to come out to yourself or to others but, if you need some inspiration then here is an idea:
+When you have finally come to terms with who you are, try saying this to yourself </p>
+</div>
+</div>
+</div>
+
+<div id = "mantra">
+<p>Mantra:</p>
+<p>I AM (fill in the blank with your sexuality/identity) </p>
+<p>I AM happy with being (fill in the blank) </p>
+<p>I AM okay with being (fill in the blank)</p>
+<p>I AM ME!!</p>
+</div>
+
+
+</body>
+</html>
